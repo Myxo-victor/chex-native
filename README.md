@@ -1,4 +1,4 @@
-# venjsX
+# chex-native
 
 Chex Native is a lightweight cross-platform mobile framework for building native Android and iOS UI with vanilla JavaScript.
 
