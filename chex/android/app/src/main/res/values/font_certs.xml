@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Required by downloadable font resource app/src/main/res/font/myfont.xml -->
+    <string-array name="com_google_android_gms_fonts_certs">
+        <item>AA==</item>
+    </string-array>
+</resources>

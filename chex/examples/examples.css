@@ -1,0 +1,126 @@
+/* Shared styles for examples/app.js and examples/toolkit.js */
+
+.ex-page {
+  padding: 20px;
+  background-color: #f8fafc;
+}
+
+.ex-block {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.ex-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.ex-body {
+  font-size: 14px;
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+.ex-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.ex-input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid rgb(238, 233, 233);
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.ex-row {
+  flex-direction: row;
+}
+
+.ex-btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.ex-btn-alt {
+  background-color: #0f172a;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.tk-scroll {
+  padding: 10px;
+}
+
+.tk-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 10px;
+}
+
+.tk-spinner {
+  margin-bottom: 10px;
+}
+
+.tk-input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid rgb(238, 233, 233);
+  color: #1f2937;
+}
+
+.tk-feed-page {
+  padding: 12px;
+  background-color: #f8fafc;
+}
+
+.tk-feed-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.tk-user {
+  color: #2563eb;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.tk-post {
+  color: #334155;
+}
+
+.tk-like-btn {
+  background-color: #0f172a;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.tk-like-btn-on {
+  background-color: #16a34a;
+}
+
+.tk-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}

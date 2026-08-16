@@ -1,0 +1,18 @@
+{
+  "name": "chex-native",
+  "private": true,
+  "version": "0.1.0",
+  "type": "commonjs",
+  "bin": {
+    "chex": "tools/chex.js"
+  },
+  "scripts": {
+    "dev": "node tools/chex.js dev",
+    "build": "node tools/chex.js build",
+    "sync": "node tools/chex.js sync"
+  },
+  "optionalDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}
+

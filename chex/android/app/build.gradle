@@ -1,0 +1,63 @@
+plugins {
+  id 'com.android.application'
+  id 'org.jetbrains.kotlin.android'
+}
+
+def hasGoogleServices = file('google-services.json').exists()
+if (hasGoogleServices) {
+  apply plugin: 'com.google.gms.google-services'
+} else {
+  println("Chex: google-services.json not found; skipping Google Services plugin (FCM push disabled).")
+}
+
+android {
+  namespace 'com.venjsx'
+  compileSdk 34
+
+  defaultConfig {
+    applicationId "com.venjsx.mobile"
+    minSdk 24
+    targetSdk 34
+    versionCode 1
+    versionName "1.0"
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled true
+      shrinkResources true
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+  }
+
+  sourceSets {
+    main {
+      assets.srcDirs = ['src/main/assets']
+    }
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+
+  buildFeatures {
+    buildConfig true
+  }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+  implementation 'androidx.appcompat:appcompat:1.6.1'
+  implementation 'androidx.core:core:1.13.1'
+  implementation 'androidx.webkit:webkit:1.8.0'
+  implementation platform('com.google.firebase:firebase-bom:33.6.0')
+  implementation 'com.google.firebase:firebase-messaging'
+}

@@ -1,0 +1,3 @@
+﻿# Set this locally on your machine; do not commit secrets.
+# Example:
+# sdk.dir=C:\\Users\\YOUR_USER\\AppData\\Local\\Android\\Sdk

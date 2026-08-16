@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="Theme.Venjsx.App" parent="Theme.AppCompat.Light.NoActionBar" />
+
+  <style name="Theme.Venjsx.Launcher" parent="Theme.Venjsx.App">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+  </style>
+</resources>
